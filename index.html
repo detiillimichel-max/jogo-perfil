@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Perfil - Multiplayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Jogo Perfil <span style="color: #ff9800;">Multiplayer</span></h1>
+        
+        <!-- Painel de Turno e Pontos -->
+        <div class="placar-container">
+            <div id="painel-turno">VEZ DO: <span id="jogador-atual" class="destaque-jogador">JOGADOR 1</span></div>
+            <div>Pontos da Rodada: <span id="pontos" class="destaque-pontos">20</span></div>
+        </div>
+
+        <div id="categoria-box">Categoria: <span id="categoria">?</span></div>
+        
+        <h3>Escolha uma dica (1 a 5):</h3>
+        <div id="dicas-botoes" class="grid-botoes"></div>
+
+        <div id="dica-exibida" class="painel-dica">Clique em um número para revelar a dica.</div>
+
+        <div class="palpite-box">
+            <input type="text" id="input-palpite" placeholder="Quem sou eu?">
+            <button onclick="fazerPalpite()">Enviar Palpite</button>
+        </div>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
