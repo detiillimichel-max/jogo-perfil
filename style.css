@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.game-container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.grid-botoes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+button {
+    padding: 10px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+.painel-dica {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+}
+/* Estilos novos para o modo Multiplayer */
+.placar-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2a2a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.destaque-jogador {
+    color: #00bcd4;
+    text-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+.destaque-pontos {
+    color: #4caf50;
+}
